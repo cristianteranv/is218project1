@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Bootstrap 4 Page</title>
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">LearnTheBasics</a>
+      <!-- Responsive Button for the smaller menu -->
+      <button class="navbar-toggler" type="button"
+              data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <!-- Links -->
+          <li class="nav-item">
+            <a class="nav-link" href="git.html">Git</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="github.html">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docker.html">Docker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vi.html">Vi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="linux.html">Linux Commands</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <h1>Learning the Basics of Linux Commands</h1>
+
+      <h2>What are Linux Commands? </h2>
+
+      <div class="center">
+        <p>"The Linux command line is a text interface to your computer. Often referred to as the shell, terminal, console, prompt or various other names,
+            it can give the appearance of being complex and confusing to use."
+          <a href="https://ubuntu.com/tutorials/command-line-for-beginners#1-overview">(ubuntu.com)</a></p>
+      </div>
+
+      <h2>Getting Started</h2>
+      <div class="center">
+        <p>To use linux commands you would have to open your Command Prompt or Powershell.
+        </p>
+
+        <p>To get started you would want to see the current directory you are in using <b>pwd</b> and after you would want to go to the directory you want to be at.
+          For now we will go to the desktop by doing <b>cd /Desktop</b> and creating a new directory by <b>mkdir test</b>. Then going into that new directory by
+        <b>cd /test</b> and to check that you are, we can use again the command <b>pwd</b>. We can now create a file by using <b>touch text.txt</b> and remove that file
+        by using the command <b>rm text.txt</b> and that is the basics of linux commands.</p>
+
+      </div>
+
+
+      <h2>Linux Commands</h2>
+
+      <p>
+        pwd - Present Working Directory - allows you to see where you are at <br>
+
+        cd - change directory - allows you to move from the current directory <br>
+
+        ls - view the content of the current directory <br>
+
+        mv - allows you to move files or rename files <br>
+
+        mkdir - allows you to create a new directory(folder)  <br>
+
+        rmdir - allows you to delete directories (only if directory is empty) <br>
+
+        rm - allows you to delete directories and the contents, if you wish to delete it entirely use -r  <br>
+
+        touch - allows you to create a blank new file  <br>
+        <br><br><br><br><br><br><br><br><br><br></p>
+    </div>
+  </div>
+  <footer class="footer page-footer font-small ">
+    <div class="container">
+      <div class="row">
+        <span class="text-muted">&copy; Marcelo Mendoza, 2021 |  Terms Of Use  |  Privacy Statement</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
