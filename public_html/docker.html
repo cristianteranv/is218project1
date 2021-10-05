@@ -2,9 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My First Bootstrap 4 Page</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
 
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">LearnTheBasics</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <!-- Links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="git.html">Git</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="github.html">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="docker.html">Docker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vi.html">Vi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="linux.html">Linux Commands</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <h1>Learning the Basics of Docker</h1>
+
+            <h2>What is Docker? </h2>
+
+            <div class="center">
+                <p>"Docker is an open source containerization platform. It enables developers to package application into containers-standardized executable
+                    components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any
+                    environment. Containers simplify delivery of distributed applications, and have become increasingly popular as organizations shift to
+                    cloud-native development and hybrid multicloud environment"
+                    <a href="https://www.ibm.com/cloud/learn/docker">(ibm.com)</a></p>
+            </div>
+
+            <h2>Getting Started</h2>
+            <div class="center">
+                <p>First for Windows, open Powershell as Administrator and run: <br>
+                    dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart <br>
+                    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart <br>
+                    and reboot the computer. After download
+                    <a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">this</a>.
+                </p>
+
+                <p>Doing these steps are prerequisites for docker to be used. </p>
+
+
+
+                <p>For an in-depth of Docker and getting started with using it go <a href="https://docs.docker.com/get-started/">Here</a>.</p>
+
+            </div>
+
+
+            <h2>Commands for Docker</h2>
+
+            <p>
+
+                <i>Containers commands</i> <br>
+
+                <br> <b> docker container my_command </b> <br>
+
+                create - creatre a container from an image <br>
+
+                start - start an existing container <br>
+
+                run - create a new container and start it <br>
+
+                ls - list running containers <br>
+
+                inspect - see lots of info about a container <br>
+
+                stop - gracefully stop running container <br>
+
+                kill - Stop main process in container abruptly <br>
+
+                rm - delete a stopped container <br>
+
+                <br> <i>Images commands</i> <br>
+
+                <br> <b> docker image my_command </b> <br>
+
+                build - build an image <br>
+
+                push - push an image to a remote registry <br>
+
+                ls - list images <br>
+
+                history - see intermediate image info <br>
+
+                inspect - see lots of info about an image, including the layers <br>
+
+                rm - delete an image <br>
+
+
+                 <br><br><br><br><br><br><br><br><br><br></p>
+        </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Marcelo Mendoza, 2021 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>
