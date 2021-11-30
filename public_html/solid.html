@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap 4 Page</title>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark col-12">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="index.html">
+                    LearnTheBasics
+                </a>
+                <!-- Responsive Button for the smaller menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <!-- Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="git.html">Git</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="github.html">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="docker.html">Docker</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vi.html">Vi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="linux.html">Linux Commands</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="glossary.html">OOP Glossary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aaa.html">AAA Testing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="principles.html">OOP Principles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solid.html">SOLID</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <h1>Learning the Basics of SOLID Design Principles</h1>
+
+            <h2>What is SOLID?</h2>
+
+            <div class="center">
+                <p>
+                    "SOLID is a mnemonic abbreviation for a set of design principles created for software development in object-oriented languages.
+                    The principles in SOLID are intended to make your code more extendable, logical and easier to read."
+                    <a href="https://levelup.gitconnected.com/s-o-l-i-d-principles-explained-in-python-with-examples-83b2b43bdcde">(Level Up Coding)</a>
+                </p>
+            </div>
+
+            <h2>
+                S - Single Responsibility Principle
+            </h2>
+            <div class="center">
+                <p>
+                    The Single Responsibility Principle states that a class should have one and only one job.
+                </p>
+                <p>
+                    If a class ever has two jobs it means that it has a coupled responsibility. Because of this, whenever one of the two responsibilities
+                    is modified, the other responsibility will also be affected.
+                </p>
+                <p>
+                    To avoid this, both responsibilities should be split into their own two classes.
+                </p>
+            </div>
+            <h2>
+                O - Open-Closed Principle
+            </h2>
+            <div class="center">
+                <p>
+                    The Open-Closed Principle states that entities of code like methods, classes, functions and modules
+                    should be open for extension but closed for modification.
+                </p>
+                <p>
+                    <b>"Extension without modification."</b>
+                </p>
+            </div>
+            <h2>
+                L - Liskov Substitution Principle
+            </h2>
+            <div class="center">
+                <p>
+                    The main idea behind Liskov Subtitution Principle is that, for any class, a client should be able to use any of its subtypes
+                    indistinguishably, without even noticing, and therefore without compromising the expected behavior at runtime.
+                </p>
+                <p>
+                    In simpler terms means that a subclass, child or specialization of an object or class must be suitable by its parent class.
+                </p>
+            </div>
+            <h2>
+                I - Interface Segregation Principle
+            </h2>
+            <div class="center">
+                <p>
+                    Make fine grained interfaces that are client specific Clients should not be forced to depend upon interfaces that they do not use.
+                    This principle deals with the disadvantages of implementing big interfaces.
+                </p>
+            </div>
+            <h2>
+                D - Dependecy Inversion Principle
+            </h2>
+            <div class="center">
+                <p>
+                    Dependency should be on abstractions not concretions. High-level modules should not depend upon low-level modules.
+                    Both low and high level classes should depend on the same abstractions.
+                </p>
+                <p>
+                    Abstractions should not depend on details. Details should depend upon abstractions.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Cristian Teran, 2021 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+</html>
